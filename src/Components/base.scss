@@ -1,6 +1,7 @@
 @import "product";
 @import "product-display";
 @import "compare-products";
+@import "modal";
 .container {
   width: 70%;
   margin: auto;
@@ -10,5 +11,8 @@
   background-color: transparent;
   border: 0;
   padding: 10px 2rem;
+  &:focus {
+    outline: none;
+  }
   cursor: pointer;
 }

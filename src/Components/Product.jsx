@@ -4,20 +4,16 @@ import { addProduct, removeProduct } from "./../Redux/productActions";
 // import Cherry from "./../images/Cherry.png";
 function Product({ product, products, addProduct, removeProduct }) {
   let {
-    id,
     name,
     image,
     price,
-    colors,
-    condition,
-    description,
-    vendors
+
+    description
   } = product;
 
   //   checking if product already in the comparing items array
   const [isPresent, setIsPresent] = useState(false);
   useEffect(() => {
-    console.log("looping");
     for (let p of products) {
       if (p.id === product.id) {
         setIsPresent(true);

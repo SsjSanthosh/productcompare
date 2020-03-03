@@ -1,0 +1,51 @@
+.Modal {
+  width: 300px;
+  height: 300px;
+  &-checkbox-div {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &-title {
+    text-transform: bold;
+    display: inline-block;
+    width: 60%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(138, 136, 136);
+  }
+  &-search {
+    padding-bottom: 10px;
+    > input {
+      width: 90%;
+      border-radius: 3px;
+      padding: 0.5rem 0.6rem;
+      border: 1px solid #d9dadb;
+      background-color: #f6f7f8;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    border-bottom: 1px solid #d9dadb;
+  }
+  &-attributes {
+    .Modal-checkbox {
+      margin: 10px;
+      padding-left: 20px;
+      > input {
+        margin: 0 10px;
+      }
+    }
+  }
+  .btn-done {
+    background-color: rgb(0, 119, 255);
+    border-radius: 5px;
+    color: white;
+    margin: 0 20px;
+  }
+  .btn-close {
+    background-color: #d9dadb;
+    border-radius: 5px;
+  }
+}

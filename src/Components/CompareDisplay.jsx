@@ -1,8 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
+import { openModal } from "./../Redux/productActions";
 import Compare from "./Compare";
 
-function CompareDisplay({ products }) {
+function CompareDisplay({ products, openModal }) {
   if (products.length === 0)
     return (
       <div className="container">
@@ -21,7 +22,9 @@ function CompareDisplay({ products }) {
     <div className="container">
       <div className="Compare-flex">
         <p className="main-header">Now comparing - </p>
-        <button className="btn btn-edit">Add/Remove Attributes </button>
+        <button className="btn btn-edit" onClick={openModal}>
+          Add/Remove Attributes{" "}
+        </button>
       </div>
       <div className="Compare-display">
         {products.map(p => (
@@ -38,4 +41,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(CompareDisplay);
+export default connect(mapStateToProps, { openModal })(CompareDisplay);
