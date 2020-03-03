@@ -1,0 +1,57 @@
+.Compare-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .btn-edit {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition: all 0.2s;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+.Compare-display {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  .Compare {
+    margin: 5px 2px;
+
+    &-div {
+      transition: all 0.3s;
+      margin: 7px 0;
+      border: 1px solid transparent;
+      &:hover {
+        background-color: #f6f7f8;
+        border: 1px solid black;
+      }
+      > p {
+        margin: 10px;
+      }
+      width: 300px;
+
+      text-align: center;
+      background-color: white;
+      border-radius: 2px;
+      &-colors {
+        display: flex;
+        justify-content: center;
+        .Compare-colors {
+          width: 15px;
+          height: 15px;
+          margin: 5px;
+          border-radius: 10px;
+
+          background-color: teal;
+        }
+      }
+      &-title {
+        color: lightgray;
+      }
+    }
+  }
+}

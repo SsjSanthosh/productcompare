@@ -1,0 +1,14 @@
+@import "product";
+@import "product-display";
+@import "compare-products";
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.btn {
+  background-color: transparent;
+  border: 0;
+  padding: 10px 2rem;
+  cursor: pointer;
+}
