@@ -24,9 +24,9 @@ function CompareDisplay({ products, openModal }) {
   return (
     <div className="container">
       <div className="Compare-flex">
-        <p className="main-header">Now comparing - </p>
+        <span className="main-header">Now comparing </span>
         <button className="btn btn-edit" onClick={openModal}>
-          Add/Remove Attributes{" "}
+          Edit Attributes{" "}
         </button>
       </div>
       <div className="Compare-display">

@@ -3,9 +3,18 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    > span {
+      margin: 1rem auto;
+    }
+  }
   .btn-edit {
     background-color: white;
     border: 1px solid black;
+    padding: 10px 1rem;
     border-radius: 3px;
     transition: all 0.2s;
     &:hover {
