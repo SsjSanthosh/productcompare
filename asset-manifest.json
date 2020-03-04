@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/productcompare/static/css/main.8fb5841a.chunk.css",
+    "main.js": "/productcompare/static/js/main.8c20d482.chunk.js",
+    "main.js.map": "/productcompare/static/js/main.8c20d482.chunk.js.map",
+    "runtime-main.js": "/productcompare/static/js/runtime-main.7188c65e.js",
+    "runtime-main.js.map": "/productcompare/static/js/runtime-main.7188c65e.js.map",
+    "static/js/2.9b4d5781.chunk.js": "/productcompare/static/js/2.9b4d5781.chunk.js",
+    "static/js/2.9b4d5781.chunk.js.map": "/productcompare/static/js/2.9b4d5781.chunk.js.map",
+    "index.html": "/productcompare/index.html",
+    "precache-manifest.64f51919605b55adf26e626bb309ebce.js": "/productcompare/precache-manifest.64f51919605b55adf26e626bb309ebce.js",
+    "service-worker.js": "/productcompare/service-worker.js",
+    "static/css/main.8fb5841a.chunk.css.map": "/productcompare/static/css/main.8fb5841a.chunk.css.map",
+    "static/js/2.9b4d5781.chunk.js.LICENSE.txt": "/productcompare/static/js/2.9b4d5781.chunk.js.LICENSE.txt",
+    "static/media/Cherry.png": "/productcompare/static/media/Cherry.8d5e6dc4.png",
+    "static/media/Nuts.png": "/productcompare/static/media/Nuts.d52b5106.png",
+    "static/media/Orange.png": "/productcompare/static/media/Orange.4c9e0bb7.png",
+    "static/media/Strawberry.png": "/productcompare/static/media/Strawberry.4a2da8d9.png",
+    "static/media/logo.svg": "/productcompare/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7188c65e.js",
+    "static/js/2.9b4d5781.chunk.js",
+    "static/css/main.8fb5841a.chunk.css",
+    "static/js/main.8c20d482.chunk.js"
+  ]
+}
