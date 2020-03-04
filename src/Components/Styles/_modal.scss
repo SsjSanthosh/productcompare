@@ -38,14 +38,24 @@
       }
     }
   }
-  .btn-done {
-    background-color: rgb(0, 119, 255);
-    border-radius: 5px;
-    color: white;
-    margin: 0 20px;
-  }
-  .btn-close {
-    background-color: #d9dadb;
-    border-radius: 5px;
+  &-btn-div {
+    display: flex;
+    justify-content: space-evenly;
+    .btn-done {
+      background-color: rgb(0, 119, 255);
+      border-radius: 5px;
+      color: white;
+      margin: 0 20px;
+    }
+    .btn-close {
+      background-color: transparent;
+      border: 1px solid black;
+      color: black;
+      border-radius: 5px;
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
   }
 }

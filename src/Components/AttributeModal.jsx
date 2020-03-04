@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// npm module to easily implement react modals
 import Modal from "react-modal";
 import { connect } from "react-redux";
 import {
@@ -7,7 +8,9 @@ import {
   applyAttributes
 } from "./../Redux/productActions";
 function AttributeModal({ closeModal, showModal, applyAttributes }) {
+  // attaching app element to the modal to prevent overlay issues
   Modal.setAppElement("#root");
+  // styles to center the overlay
   const customStyles = {
     content: {
       top: "50%",
@@ -21,6 +24,8 @@ function AttributeModal({ closeModal, showModal, applyAttributes }) {
       backgroundColor: "rgba(0,0,0,0.6)"
     }
   };
+  // initializing hooks for the attributes state
+  // Using the attributes state , modal can pass the user selected attributes to the reducer which will filter the comparing properties
   const [attributes, setAttributes] = useState({
     colors: true,
     vendors: true,
@@ -28,11 +33,14 @@ function AttributeModal({ closeModal, showModal, applyAttributes }) {
     condition: true
   });
 
+  // keeping track of check all box
   const [checkAll, setCheckAll] = useState(true);
 
   const { colors, vendors, price, condition } = attributes;
 
+  // hook for tracking user input
   const [search, setSearch] = useState("");
+  // function to handle checking all boxes
   const handleAllTrue = () => {
     if (checkAll) {
       setCheckAll(false);
@@ -47,17 +55,20 @@ function AttributeModal({ closeModal, showModal, applyAttributes }) {
     }
   };
 
+  // apply the user chosen attributes to the compare
   const handleSubmit = () => {
     applyAttributes(attributes);
   };
-
+  // function to handle user input
   const handleSearchChange = e => {
     setSearch(e.target.value);
   };
+  // closes the modal
   function setCloseModal() {
+    // action to update the modal state
     closeModal();
   }
-
+  // handling the changes in attributes checboxes
   const handleChange = e => {
     let value = !attributes[e.target.name];
     if (value === false) setCheckAll(false);
@@ -98,6 +109,7 @@ function AttributeModal({ closeModal, showModal, applyAttributes }) {
               </div>
             </div>
             <div className="Modal-attributes">
+              {/* checking if attribute matches the string entered by the user and then rendering check */}
               {"price".includes(search.toLowerCase()) && (
                 <div className="Modal-checkbox">
                   <input
@@ -147,12 +159,14 @@ function AttributeModal({ closeModal, showModal, applyAttributes }) {
                 </div>
               )}
             </div>
-            <button className="btn btn-close" onClick={closeModal}>
-              Close
-            </button>
-            <button className="btn btn-done" onClick={handleSubmit}>
-              Apply
-            </button>
+            <div className="Modal-btn-div">
+              <button className="btn btn-close" onClick={closeModal}>
+                Close
+              </button>
+              <button className="btn btn-done" onClick={handleSubmit}>
+                Apply
+              </button>
+            </div>
           </div>
         </Modal>
       </div>

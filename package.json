@@ -36,7 +36,6 @@
     ]
   },
   "devDependencies": {
-    "json-loader": "^0.5.7",
     "redux-logger": "^3.0.6"
   }
 }
